@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ID selector</title>
+<style type="text/css">
+	/* ID selector는 HTML <body>태그에서 id 속성으로 사용하는 태그가 유일 해야 한다. */
+		#big{font-size: 30px;}
+		#small{font-size: 10px;}
+		#color{background-color: #000000; color: #ffffff;}	
+		
+		/*#big2{font-size: 10;} */
+		/*multiple selector*/
+		#big,#big2{font-size: 30px;}
+</style>
+</head>
+<body>
+	
+<div id="big">오늘은</div>
+<!-- <div id="big">월요일</div> : 잘못 사용된 예) id 속성은 body에서 유일할것-->
+<div id="color">오늘은</div>
+<div id="small">입니다.</div>
+
+<div id="big2">이것이 자바닥</div>
+</body>
+</html>

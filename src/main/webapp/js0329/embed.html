@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.btn{border: 1px solid #333; background-color: #ffffff; 
+		font-weight: bold; font-size: 20px; cursor: pointer;}
+	div{font-weight: bold; border: 1px solid #333; 
+		border-radius: 10px; padding: 10px; box-shadow: 10px 10px 10px #333;
+		width: 400px; height: 200px; margin-top: 30px;}	
+</style>
+<script type="text/javascript">
+	//embed 방식
+	function setText(text,flag){
+		var divNode=document.getElementById("output");
+		if(flag ==2){
+			text="<marquee scrollamount='10'>"+text+"</marquee>";
+		}
+		divNode.innerHTML=text;
+	}
+</script>
+</head>
+<body>
+오늘의 요일은? <input type="button" value="확인" class="btn" onclick="setText('금요일',1)"/><br>
+처음 프로젝트 하시느라 수고하셨습니까?
+	<input type="button" value="수고했" class="btn" onclick="setText('고생했 즐거운 주말되시길',2)"/>
+	<input type="button" value="수고안했" class="btn" onclick="setText('고생했 즐거운 주말되시길',3)"><br>
+	<div id="output"></div>
+<div id="output"></div>
+<!--	<body>태그 안에서 
+<script type="text/javascript">
+	//embed 방식
+	function setText(text,flag){
+		var divNode=document.getElementById("output");
+		if(flag ==2){
+			text="<marquee scrollamount='10'>"+text+"</marquee>";
+		}
+		divNode.innerHTML=text;
+	}
+</script>
+-->
+
+</body>
+</html>

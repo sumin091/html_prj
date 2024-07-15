@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<table border="1">
+	<!--tr태그는 td나 thㅁ나 가질 수 있다.-->
+	<tr><td>안녕</td></tr>
+	<tr><td>오늘은 목요일</td>></tr>
+</table>
+<table border="1" bordercolor="#FF0000" background="images/seoul_map.png"> <!--속성은 상속되므로 아래 tr,th, td 태그로 상속된다.-->
+<!-- <table border="1" bgcolor="#8096BB"> --> <!-- width="600" 보다 자식의 크기로 부모가 설정되도록 속성--> 
+	<tr bgcolor="#4DA665">
+		<th width="100">번호</th>	<!--제목을 보여줄때 th 태그 사용-->
+		<th bgcolor="FEF2C4" width="150">이름</td>	<!--부모보다 자식의 색 지정이 우선시-->
+		<th width="550">주소</td>
+	</tr>
+	<tr height="30">
+		<td>1</td>	<!--데이터를 보여줄때 td 태그 사용-->
+		<td>윤웅찬</td>
+		<td>경기도 수원시 영통구</td>
+	</tr>
+	<tr height="30">
+		<td>2</td>
+		<td>김병년</td>
+		<td>경기도 수원시 영통구 망포동</td>
+	</tr>
+	<tr height="30">
+		<td>3</td>
+		<td>진수현</td>
+		<td>서울시 강남구 역삼동</td>
+	</tr>
+</table>
+</body>
+</html>

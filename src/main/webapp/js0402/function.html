@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	
+</style>
+<script type="text/javascript">
+	//기명함수
+	function test(num){//매개변수는 var를 붙이지 않는다.
+		alert("이름이 있는 기명함수 입니다."+ num);
+	}//test
+	
+	//호출
+	test(4);
+	
+	
+	//무기명함수: 할당되는 변수가 함수의 이름이 된다.
+	var name2=function(){
+		alert("너의 이름은?");
+	}
+	//호출
+	name2();	//name은 변수지만 함수를 가지고 있으므로 ()
+	
+	//무기명함수: 할당되는 변수가 함수의 이름이 된다.
+	var name3=function(){
+		alert("투표자 너의 이름은?");
+	}
+	//호출
+	name3();
+</script>
+</head>
+<body>
+
+</body>
+</html>
